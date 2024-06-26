@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./portfolio.css">
+  <script src="portfolio.js"></script>
+  <script src="Google Sheet.js">
+</script>
+</head>
+<body>
+  
+    <header class="header">
+        <a href="#" class="logo">My Portfolio</a>
+        <div class="hide">
+            <i class='bx bx-menu' id="menu-icon1"></i>
+            <i class="fa-solid fa-xmark" id="menu-icon2"></i>
+        </div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills" >Skill</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>David Mondal</h1>
+            <h3>And I'm a <span>MERN Stack Developer</span></h3>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/david-mondal-53197b250"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/22Mca014"><i class='bx bxl-github' ></i></a>
+            </div>
+            <a href="22MCA014.pdf" target="_blank" class="btn">RESUME</a>
+        </div>
+        <div class="home-img">
+            <img style="margin-left: 30px;" src="one.png" alt="David">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="one.png" alt="David">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>MERN stack Developer!</h3>
+            <p>
+                I believe that &quot;If you want something you've never had, you must be willing to do something you've never done.&quot;
+
+I am David Mondal. I am currently studying for a Master of Computer Application at the National Institute of Technology Agartala, and I am passionate about coding, programming, and problem-solving.
+
+I'm excited to connect with new people and have meaningful conversations. Please feel free to reach out to me if you have any questions. Let's get to know each other!
+            </p>
+
+         </div>
+        </section>
+        <!-- skill -->
+
+
+        <section class="skills" id="skills">
+            <div class="max-width">
+              <h2 class="title">My Skills</h2>
+              <div class="skills-content">
+                <div class="column left">
+                  <div class="text">My creative skills & experiences.</div>
+                  <p>
+                    
+                    I'm David Mondal, experienced in web development, bridging frontend design with backend functionality. I possess strong problem-solving skills and deep knowledge of DBMS, OOPs, networking, and OS, enabling me to deliver efficient solutions in software and IT projects
+                  </p>
+                 
+                </div>
+                <div class="column right">
+                  <div class="bars">
+                    <div class="info">
+                      <span>React</span>
+                      <span>60%</span>
+                    </div>
+                    <div class="line django"></div>
+                  </div>
+                  <div class="bars">
+                    <div class="info">
+                      <span>MongoDb</span>
+                      <span>70%</span>
+                    </div>
+                    <div class="line react"></div>
+                  </div>
+                  <div class="bars">
+                    <div class="info">
+                      <span>Expressjs</span>
+                      <span>60%</span>
+                    </div>
+                    <div class="line php"></div>
+                  </div>
+                  <div class="bars">
+                    <div class="info">
+                      <span>Nodejs</span>
+                      <span>70%</span>
+                    </div>
+                    <div class="line mysql"></div>
+                  </div>
+                  <div class="bars">
+                    <div class="info">
+                      <span>Problem-solving</span>
+                      <span>60%</span>
+                    </div>
+                    <div class="line node"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+        <!-- project -->
+    <section class="project" id="project">
+        <div class="project-heading">
+            <h4>Projects</h4>
+        </div>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td> Restaurant Website</td>
+                <td>•  Customers can browse through all the food items available on the website. Upon logging in, they can place orders and select either cash on delivery (COD) or online payment options. Administrators have the authority to add new food items, remove existing ones, and update their availability and delivery statuses as needed.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Login and SignUp page </td>
+                <td>•  
+                    This is a basic login and signup page where users can sign up, log in, reset their password if forgotten, update their password, and after logging in, their name is fetched and displayed on another page. This project is designed to showcase fundamental user authentication and password management functionalities in a web application context.<br>
+                    
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form  method="post" action="https://script.google.com/macros/s/AKfycbwhT4cZk6yDQkR3D7lpyER3MMJpA1i0bduvo5IoUslFZdNLB05PaNMg3Iau01X71N7O/exec" name="contact-form">
+            <div class="input-box">
+                <input type="text"  name="Full-Name" placeholder="Full Name">
+                <input type="email"  name="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="Mobile" placeholder="Mobile Number">
+                <input type="text" name="email-sub" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" name="Message" placeholder="Your Message" ></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p1>Email: d12mondal@gmail.com ✉️</p1><br/>
+            <p1>Phone: +91 8100090650 📞</p1><br/>
+            <p1>Address: Kolkata, West Bengal, India.📍</p1><br/>
+            <br/>
+            <p>Copyright &copy; 2023 by David Mondal | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+   
+    </script>
+</body>
+</html>

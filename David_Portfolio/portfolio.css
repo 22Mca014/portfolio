@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',  sans-serif;
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: rgb(219, 168, 241);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 10vh;
+    padding: 0rem 1rem;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0,0,0, .2);
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+    display: flex;
+    
+}
+
+.navbar a {
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 3rem;
+}
+
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+i{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    /* display:block ; */
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-img img {
+        height: 35vw;
+        border-radius: 8rem;
+        border: .9rem solid var(--main-color);
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--second-bg-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 4rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    min-height: 100vh;
+}
+
+.about-content {
+    flex: 1;
+    padding: 0 5%;
+}
+
+.about-img img{
+    
+    height: 30vw;
+    width: 25vw;
+    border-radius: 8rem;
+    border: .9rem solid var(--main-color);
+    margin-left: 20%;
+} 
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+    margin-left: 10%;
+}
+
+.about-content h3{
+    font-size: 2.6rem;
+    margin-left: 10%;
+
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    margin-left: 10%;
+}
+/* skill section */
+
+.skills {
+    padding: 50px 20px; /* Adjusted padding for responsiveness */
+    background-color: var(--bg-color); /* White background for skills section */
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px; /* Increased font size */
+}
+
+.skills .title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 6rem; /* Increased font size */
+}
+
+.skills .title::after {
+    content: " - What I Know-";
+    display: block;
+    font-size: 25px; /* Increased font size */
+    color: var(--text-color); /* Lighter text color for after content */
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 3rem; /* Increased font size */
+}
+
+.skills .column {
+    padding: 40px;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 600px; /* Limit width for larger screens */
+    margin-bottom: 30px; /* Increased margin bottom for spacing */
+}
+
+.skills .left .text {
+    font-size: 2.4rem; /* Increased font size */
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.skills .left p {
+    font-size: 1.5rem; /* Increased font size */
+    line-height: 1.6;
+    color: var(--text-color); /* Darker text color */
+    text-align: justify;
+}
+
+.skills .left a {
+    display: inline-block;
+    background-color: var(--main-color); /* Crimson background color */
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px; /* Increased font size */
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills .left a:hover {
+    background-color: transparent; /* Change background to transparent on hover */
+    color: var(--main-color); /* Change text color to crimson on hover */
+}
+
+.skills .right .bars {
+    margin-bottom: 20px;
+}
+
+.skills .right .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.skills .right .info span {
+    font-size: 1.6rem; /* Increased font size */
+    font-weight: 500;
+    color: var(--text-color); /* Dark text color */
+}
+
+.skills .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgray; /* Light gray background for progress bar */
+    position: relative;
+    border-radius: 3px; /* Rounded corners for the progress bar */
+}
+
+.skills .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--main-color); /* Crimson color for progress indicator */
+    border-radius: 3px; /* Rounded corners for the progress indicator */
+}
+
+.skills .right .django::before {
+    width: 80%; /* Adjust width for Django progress */
+}
+
+.skills .right .react::before {
+    width: 70%; /* Adjust width for React progress */
+}
+
+.skills .right .php::before {
+    width: 60%; /* Adjust width for PHP progress */
+}
+
+.skills .right .mysql::before {
+    width: 70%; /* Adjust width for MySQL/SQL progress */
+}
+
+.skills .right .node::before {
+    width: 60%; /* Adjust width for Node.js progress */
+}
+
+@media (min-width: 768px) {
+    .skills .title {
+        font-size: 5rem; /* Increase font size for medium and larger screens */
+    }
+
+    .skills .title::after {
+        font-size: 1.5rem; /* Increase font size for after content */
+    }
+
+    .skills .skills-content {
+        flex-wrap: nowrap; /* Maintain single row layout on larger screens */
+    }
+
+    .skills .column {
+        width: 50%; /* Adjusted width for larger screens */
+        margin-bottom: 0; /* Reset margin bottom for larger screens */
+    }
+
+    .skills .left .text {
+        font-size: 2rem;
+
+        
+    }
+
+    .skills .left p {
+        font-size: 1.5rem;
+         /* Increase font size for larger screens */
+    }
+
+    .skills .left a {
+        font-size: 16px; /* Increase font size for larger screens */
+    }
+
+    .skills .right .info span {
+        font-size: 1.5rem; /* Increase font size for larger screens */
+    }
+}
+
+/* projectsection */
+
+.project {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    background-color: var(--second-bg-color);
+}
+
+.project-heading h4 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 5rem;
+}
+
+table {
+    width: 100%; 
+    height: 100%;
+    max-width: 150%;
+    margin-top: 20px; 
+    border-collapse: collapse;
+    font-size: 1.8rem;
+}
+
+th, td {
+    
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.6rem;
+
+}
+
+th {
+    size: 15px;
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    font-size: 2.6rem;
+
+}
+
+.contact{
+    margin-bottom: 2rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    height: 50%;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.cotact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text p{
+    font-size: 2rem;
+}
+
+.footer-text p1{
+    font-size: 1.5rem;
+}
+
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+
+}
+
+.footer-iconTop a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+
+}
+.hide{
+    display: none;
+}
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+
+  
+    /* General styles */
+.hide {
+    display: none;
+}
+
+#menu-icon1,
+#menu-icon2 {
+    cursor: pointer;
+}
+
+/* Media query for screen sizes 768px or less */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    #menu-icon1 {
+        display: block;
+    }
+
+    #menu-icon2 {
+        display: none;
+    }
+
+    .navbar.responsive {
+        display: flex;
+        position: absolute;
+        top: 60px; /* Adjust according to your header height */
+        width: 100%;
+        background-color: #333;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    
+}
